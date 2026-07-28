@@ -31,6 +31,8 @@ Uma boa rodada tem as 3–4 mais relevantes para a peça, não as cinco por obri
 
 Esta seção é o ponto de extensão planejado — ao evoluir a skill, plugar aqui sem mexer no fluxo:
 
-- **Tom de voz proprietário:** quando existir um guia de voz do usuário/agência (arquivo próprio em `references/voz-*.md`), a pergunta 5 deixa de ser pergunta e vira leitura obrigatória do arquivo antes de gerar.
-- **Dados proprietários:** benchmarks, pesquisas e números recorrentes do usuário (ex. `references/dados-*.md`) alimentam a pergunta 3 automaticamente — o agente consulta antes de pedir ao usuário.
+Arquivos `references/voz-*.md` e `references/dados-*.md` são **locais e proprietários** (fora do repo público, via `.gitignore`). Antes da entrevista, verifique se existem no diretório da skill — se existirem, leia-os primeiro:
+
+- **Tom de voz proprietário:** havendo um `references/voz-*.md` aplicável, a pergunta 5 deixa de ser pergunta e vira leitura obrigatória do arquivo antes de gerar.
+- **Dados proprietários:** benchmarks, pesquisas e números recorrentes em `references/dados-*.md` alimentam a pergunta 3 — consulte antes de pedir ao usuário e use como fonte legítima (não é dado inventado; é dado com procedência registrada).
 - **Histórico de respostas:** respostas de briefing recorrentes (mesmo cliente/marca) podem ser promovidas a arquivo de referência para não reperguntar.
